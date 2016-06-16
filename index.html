@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+   
+
+<title>TimeZoned</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+</head>
+<body class="body">
+	<nav class="navbar navbar-default">
+		<form class="navbar-form navbar-center" role="search">
+		  <div class="form-group center-children">
+		    <input class="form-control input center-block" id="autocomplete" placeholder="Enter any city" type="text"/>
+		  </div>
+		</form>
+	</nav>
+	<div class="container">
+    <div class="row" id="locationField">
+	    <div class="col-md-8 col-md-offset-2 col-sm-12 center-children">
+<!--     		<input class="form-control input-lg center-block" id="autocomplete" placeholder="Enter any city" type="text"/> -->
+	    </div>
+    </div>
+		<div class="row">
+	    <div class="col-md-12 col-sm-12 center-children">
+	      <div id="zone">Timezone: </div>
+	      <div id="offset">UTC Offset: </div>
+	      <!-- <div id="zoneid">Timezone ID: </div> -->
+	      <div id="lat">Latitude: </div>
+	      <div id="long">Longitude: </div>
+	      <div id="local">Local Time: </div>
+			</div>
+		</div>
+	</div>
+  <div class="container map-container">
+	  <div class="row">
+		  <div class="col-md-12 map-clock">
+		  	<span id="clock" style="left: 0%;"></span>
+	  	</div>
+	  </div>
+	  <div class="map-container">
+		  <div class="row map">
+	      <div class="col-md-12 map-inner">
+	        <span id="marker" style="left: 4.27956%; top: 14.1661%;"></span>
+	      </div>
+		  </div>
+	  </div>
+  </div>
+	
+
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdi3Dm2kHmaVV5DQKKdfspUjr7PE09844&libraries=places&callback=initAutocomplete"
+      async defer type="text/javascript"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

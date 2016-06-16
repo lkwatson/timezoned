@@ -1,0 +1,93 @@
+/* Main CSS file */
+
+body {
+  font-family: 'Montserrat',sans-serif;;
+  font-size: 14px;
+  background-color: #e5e5e5;
+}
+
+.body {
+/* 	This is a compatibility fix */
+	background-color: #e5e5e5; 
+}
+
+/* Google Places Autocomplete style */
+#autocomplete {
+    width:300px;
+}
+.pac-icon,.pac-icon-marker {
+    width: 0;
+    background-image: none
+}
+
+/* Map Style */
+.map {
+  background: #1f7ca5 url(img/bg.png);
+  padding: 1px;
+  border-radius: 3px;
+  position: relative;
+}
+.map-inner {
+  padding-bottom: 50%;
+  background: url(img/world.png) 50% 50%;
+  background-size: cover;
+  position: relative;
+  border-radius: 2px
+}
+.map-inner span {
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: #e59400;
+  position: absolute;
+  border-radius: 6px;
+  border: 1px solid #4e7cad
+}
+.map-inner span.active {
+  background: #4e7cad
+}
+.map-container {
+	padding:10px;
+}
+
+/* Clock */
+
+.map-clock {
+	position: relative;
+	margin: 18px 0px 0px 0px;
+	bottom: 18px;
+}
+.map-clock span {
+	position: absolute;
+	padding: 2px;
+	color: #FFF;
+	border-radius: 5px;
+  background: #1f7ca5;
+  font-size: 20px
+}
+
+/* General Style */
+.center-children {
+  text-align: center;
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.navbar-form {
+	margin:0;
+  float:none;
+}
+
+.field { 
+  border: 1px solid #848484; 
+  -webkit-border-radius: 30px; 
+  -moz-border-radius: 30px; 
+  border-radius: 30px; 
+  outline:0; 
+  height:25px; 
+  width: inherit; 
+  padding-left:10px; 
+  padding-right:10px; 
+}

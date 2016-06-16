@@ -39,7 +39,7 @@ function initAutocomplete() {		//This function gets called as a callback when th
       $.getJSON( tzUrl, {																											//It really should be in the Places API, but despite my 
           location: coords,																										//requests, they haven't done so (yet?).
           timestamp: seconds
-          //key: 'AIzaSyCdi3Dm2kHmaVV5DQKKdfspUjr7PE09844'										//Key is unused in client-only environment.
+          //key: 'keykeykeyekkeykeeky'										//Key is unused in client-only environment.
         })
       .done(function( data ) {																								//Once we finish getting data and...
         if(data.status == 'OK') {																							//we confirm the data is valid...
